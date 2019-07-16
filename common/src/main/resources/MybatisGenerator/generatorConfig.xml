@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <!-- 数据库驱动-->
+    <classPathEntry location="/Users/hejuwen/.m2/repository/mysql/mysql-connector-java/8.0.15/mysql-connector-java-8.0.15.jar"/>
+
+    <!--
+    jdbc.driver=com.mysql.jdbc.Driver
+    url=jdbc:mysql:///test
+    username=root
+    password=123456
+    -->
+
+
+    <context id="Tables" targetRuntime="MyBatis3">
+        <!-- 注释 -->
+        <commentGenerator >
+            <property name="suppressAllComments" value="true"/><!-- 是否取消注释 -->
+            <property name="suppressDate" value="true" /> <!-- 是否生成注释带时间戳-->
+        </commentGenerator>
+
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/OA"
+                        userId="root"
+                        password="1214">
+        </jdbcConnection>
+
+        <javaTypeResolver >
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+
+
+        <!-- 修改包名字 -->
+        <javaModelGenerator targetPackage="com.jv.sysmanager.entity" targetProject="/Users/hejuwen/Desktop/git_checkout/MY/OA/common/src/generalClass">
+            <property name="enableSubPackages" value="false" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+
+        <sqlMapGenerator targetPackage="com.jv.sysmanager.mapper"  targetProject="/Users/hejuwen/Desktop/git_checkout/MY/OA/common/src/generalClass">
+            <property name="enableSubPackages" value="false" />
+        </sqlMapGenerator>
+
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.jv.sysmanager.dao"  targetProject="/Users/hejuwen/Desktop/git_checkout/MY/OA/common/src/generalClass">
+            <property name="enableSubPackages" value="false" />
+        </javaClientGenerator>
+
+
+        <!-- 要生成的表 tableName是数据库中的表名或视图名 domainObjectName是实体类名-->
+        <table tableName="sec_function"
+               domainObjectName="SecFunction">
+        </table>
+        <table tableName="sec_entity"
+               domainObjectName="SecEntity"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true">
+        </table>
+
+    </context>
+
+</generatorConfiguration>

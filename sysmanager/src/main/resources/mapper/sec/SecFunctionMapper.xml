@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jv.sysmanager.dao.SecFunctionMapper">
+  <resultMap id="BaseResultMap" type="com.jv.sysmanager.entity.SecFunction">
+    <result column="FunctionId" jdbcType="INTEGER" property="functionid" />
+    <result column="FunName" jdbcType="VARCHAR" property="funname" />
+    <result column="FunType" jdbcType="INTEGER" property="funtype" />
+    <result column="EffectDate" jdbcType="TIMESTAMP" property="effectdate" />
+    <result column="ExpireDate" jdbcType="TIMESTAMP" property="expiredate" />
+    <result column="State" jdbcType="INTEGER" property="state" />
+    <result column="OpId" jdbcType="INTEGER" property="opid" />
+    <result column="UpdateDate" jdbcType="TIMESTAMP" property="updatedate" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    FunctionId, FunName, FunType, EffectDate, ExpireDate, State, OpId, UpdateDate
+  </sql>
+  <select id="selectByExample" parameterType="com.jv.sysmanager.entity.SecFunctionExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from sec_function
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <delete id="deleteByExample" parameterType="com.jv.sysmanager.entity.SecFunctionExample">
+    delete from sec_function
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.jv.sysmanager.entity.SecFunction">
+    insert into sec_function (FunctionId, FunName, FunType, 
+      EffectDate, ExpireDate, State, 
+      OpId, UpdateDate)
+    values (#{functionid,jdbcType=INTEGER}, #{funname,jdbcType=VARCHAR}, #{funtype,jdbcType=INTEGER}, 
+      #{effectdate,jdbcType=TIMESTAMP}, #{expiredate,jdbcType=TIMESTAMP}, #{state,jdbcType=INTEGER}, 
+      #{opid,jdbcType=INTEGER}, #{updatedate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.jv.sysmanager.entity.SecFunction">
+    insert into sec_function
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="functionid != null">
+        FunctionId,
+      </if>
+      <if test="funname != null">
+        FunName,
+      </if>
+      <if test="funtype != null">
+        FunType,
+      </if>
+      <if test="effectdate != null">
+        EffectDate,
+      </if>
+      <if test="expiredate != null">
+        ExpireDate,
+      </if>
+      <if test="state != null">
+        State,
+      </if>
+      <if test="opid != null">
+        OpId,
+      </if>
+      <if test="updatedate != null">
+        UpdateDate,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="functionid != null">
+        #{functionid,jdbcType=INTEGER},
+      </if>
+      <if test="funname != null">
+        #{funname,jdbcType=VARCHAR},
+      </if>
+      <if test="funtype != null">
+        #{funtype,jdbcType=INTEGER},
+      </if>
+      <if test="effectdate != null">
+        #{effectdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="expiredate != null">
+        #{expiredate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="state != null">
+        #{state,jdbcType=INTEGER},
+      </if>
+      <if test="opid != null">
+        #{opid,jdbcType=INTEGER},
+      </if>
+      <if test="updatedate != null">
+        #{updatedate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.jv.sysmanager.entity.SecFunctionExample" resultType="java.lang.Long">
+    select count(*) from sec_function
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update sec_function
+    <set>
+      <if test="record.functionid != null">
+        FunctionId = #{record.functionid,jdbcType=INTEGER},
+      </if>
+      <if test="record.funname != null">
+        FunName = #{record.funname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.funtype != null">
+        FunType = #{record.funtype,jdbcType=INTEGER},
+      </if>
+      <if test="record.effectdate != null">
+        EffectDate = #{record.effectdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.expiredate != null">
+        ExpireDate = #{record.expiredate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.state != null">
+        State = #{record.state,jdbcType=INTEGER},
+      </if>
+      <if test="record.opid != null">
+        OpId = #{record.opid,jdbcType=INTEGER},
+      </if>
+      <if test="record.updatedate != null">
+        UpdateDate = #{record.updatedate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update sec_function
+    set FunctionId = #{record.functionid,jdbcType=INTEGER},
+      FunName = #{record.funname,jdbcType=VARCHAR},
+      FunType = #{record.funtype,jdbcType=INTEGER},
+      EffectDate = #{record.effectdate,jdbcType=TIMESTAMP},
+      ExpireDate = #{record.expiredate,jdbcType=TIMESTAMP},
+      State = #{record.state,jdbcType=INTEGER},
+      OpId = #{record.opid,jdbcType=INTEGER},
+      UpdateDate = #{record.updatedate,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+</mapper>

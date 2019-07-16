@@ -1,0 +1,66 @@
+2019-07-15 00:01:59.167  INFO 1580 --- [main] com.jv.common.CommonApplicationTests     : Starting CommonApplicationTests on bogon with PID 1580 (started by hejuwen in /Users/hejuwen/Desktop/git_checkout/MY/OA/common)
+2019-07-15 00:01:59.170  INFO 1580 --- [main] com.jv.common.CommonApplicationTests     : The following profiles are active: dev
+2019-07-15 00:01:59.652  WARN 1580 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.jv.common]' package. Please check your configuration.
+2019-07-15 00:01:59.720  INFO 1580 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-15 00:01:59.725  INFO 1580 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-15 00:01:59.761  INFO 1580 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019-07-15 00:02:01.105  INFO 1580 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-15 00:02:01.362  INFO 1580 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-15 00:02:02.063  INFO 1580 --- [main] com.jv.common.CommonApplicationTests     : Started CommonApplicationTests in 3.162 seconds (JVM running for 4.125)
+2019-07-15 00:02:02.505  INFO 1580 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-15 00:02:02.510  INFO 1580 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-15 00:02:59.381  INFO 1594 --- [main] com.jv.common.CommonApplicationTests     : Starting CommonApplicationTests on bogon with PID 1594 (started by hejuwen in /Users/hejuwen/Desktop/git_checkout/MY/OA/common)
+2019-07-15 00:02:59.382  INFO 1594 --- [main] com.jv.common.CommonApplicationTests     : The following profiles are active: dev
+2019-07-15 00:02:59.886  WARN 1594 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.jv.common]' package. Please check your configuration.
+2019-07-15 00:02:59.964  INFO 1594 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-15 00:02:59.969  INFO 1594 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-15 00:03:00.022  INFO 1594 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-07-15 00:03:01.423  INFO 1594 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-15 00:03:01.646  INFO 1594 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-15 00:03:02.178  INFO 1594 --- [main] com.jv.common.CommonApplicationTests     : Started CommonApplicationTests in 3.128 seconds (JVM running for 4.078)
+2019-07-15 00:03:02.419  INFO 1594 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-15 00:03:02.424  INFO 1594 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-15 00:05:40.054  INFO 1614 --- [main] com.jv.common.CommonApplicationTests     : Starting CommonApplicationTests on bogon with PID 1614 (started by hejuwen in /Users/hejuwen/Desktop/git_checkout/MY/OA/common)
+2019-07-15 00:05:40.055  INFO 1614 --- [main] com.jv.common.CommonApplicationTests     : The following profiles are active: dev
+2019-07-15 00:05:40.476  WARN 1614 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.jv.common]' package. Please check your configuration.
+2019-07-15 00:05:40.527  INFO 1614 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-15 00:05:40.531  INFO 1614 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-15 00:05:40.564  INFO 1614 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-07-15 00:05:41.608  INFO 1614 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-15 00:05:41.840  INFO 1614 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-15 00:05:42.344  INFO 1614 --- [main] com.jv.common.CommonApplicationTests     : Started CommonApplicationTests in 2.569 seconds (JVM running for 3.347)
+2019-07-15 00:05:42.576  INFO 1614 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-15 00:05:42.580  INFO 1614 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-15 00:06:52.582  INFO 1637 --- [main] com.jv.common.CommonApplicationTests     : Starting CommonApplicationTests on bogon with PID 1637 (started by hejuwen in /Users/hejuwen/Desktop/git_checkout/MY/OA/common)
+2019-07-15 00:06:52.583  INFO 1637 --- [main] com.jv.common.CommonApplicationTests     : The following profiles are active: dev
+2019-07-15 00:06:53.010  WARN 1637 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.jv.common]' package. Please check your configuration.
+2019-07-15 00:06:53.073  INFO 1637 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-15 00:06:53.079  INFO 1637 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-15 00:06:53.113  INFO 1637 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2019-07-15 00:06:54.190  INFO 1637 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-15 00:06:54.481  INFO 1637 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-15 00:06:54.970  INFO 1637 --- [main] com.jv.common.CommonApplicationTests     : Started CommonApplicationTests in 2.668 seconds (JVM running for 3.592)
+2019-07-15 00:06:55.201  INFO 1637 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-15 00:06:55.207  INFO 1637 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-15 22:14:18.310  INFO 2506 --- [main] com.jv.common.CommonApplicationTests     : Starting CommonApplicationTests on bogon with PID 2506 (started by hejuwen in /Users/hejuwen/Desktop/git_checkout/MY/OA/common)
+2019-07-15 22:14:18.312  INFO 2506 --- [main] com.jv.common.CommonApplicationTests     : The following profiles are active: dev
+2019-07-15 22:14:18.709  WARN 2506 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.jv.common]' package. Please check your configuration.
+2019-07-15 22:14:18.754  INFO 2506 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-15 22:14:18.756  INFO 2506 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-15 22:14:18.782  INFO 2506 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-07-15 22:14:19.808  INFO 2506 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-15 22:14:20.043  INFO 2506 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-15 22:14:20.518  INFO 2506 --- [main] com.jv.common.CommonApplicationTests     : Started CommonApplicationTests in 2.44 seconds (JVM running for 3.103)
+2019-07-15 22:14:20.766  INFO 2506 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-15 22:14:20.771  INFO 2506 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-15 22:53:31.246  INFO 2554 --- [main] com.jv.common.CommonApplicationTests     : Starting CommonApplicationTests on bogon with PID 2554 (started by hejuwen in /Users/hejuwen/Desktop/git_checkout/MY/OA/common)
+2019-07-15 22:53:31.247  INFO 2554 --- [main] com.jv.common.CommonApplicationTests     : The following profiles are active: dev
+2019-07-15 22:53:31.650  WARN 2554 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.jv.common]' package. Please check your configuration.
+2019-07-15 22:53:31.712  INFO 2554 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-15 22:53:31.719  INFO 2554 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-15 22:53:31.754  INFO 2554 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2019-07-15 22:53:32.806  INFO 2554 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-15 22:53:33.124  INFO 2554 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-15 22:53:33.624  INFO 2554 --- [main] com.jv.common.CommonApplicationTests     : Started CommonApplicationTests in 2.662 seconds (JVM running for 3.451)
+2019-07-15 22:53:33.855  INFO 2554 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-15 22:53:33.860  INFO 2554 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
